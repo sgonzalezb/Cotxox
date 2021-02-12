@@ -108,5 +108,4 @@ venv.bak/
 .settings
 
 #mvn 
-.classpath
 .project

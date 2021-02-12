@@ -3,20 +3,13 @@ package edu.pingpong.cotxox;
 import java.util.ArrayList;
 import java.util.List;
 
-import edu.pingpong.cotxox.domain.Carrera;
+import edu.pingpong.cotxox.domain.*;
 
-
-// La he copiado del repo de David y no he trabajado sobre ella por lo que no me compilaba
-// la he pasado a archivo .txt y seguiré el próximo día.
-
-public class Cotxox {
+public class Cotxox{
 
 	public static void main(String[] args) {
 
-		/* 
-		 * Configuracion del usuario
-		 * y de la Carrera. 
-		 */
+	
 
 		String tarjetaCredito = "4916119711304546";
 		String origen = "Aeroport Son Sant Joan";
@@ -39,6 +32,7 @@ public class Cotxox {
 
 		System.out.println("\n#####" + "\t See your Cost: \t" + "#####\n");
 
+
 		System.out.println("Visa: " + carrera.getTarjetaCredito());
 		System.out.println("From: " + carrera.getOrigen());
 		System.out.println("To: " + carrera.getDestino());
@@ -53,8 +47,8 @@ public class Cotxox {
 		 * La flota es un objeto de tipo PoolConductores.
 		 */
 
-		List<Conductor> poolConductores = new ArrayList<Conductor>();
-		Conductor conductor = null;
+		List<Conductor>    poolConductores = new ArrayList<Conductor>();
+		Conductor conductor;
 
 		// creamos objetos conductor y los metemos en el array
 
@@ -119,5 +113,7 @@ public class Cotxox {
 
 		System.out.println("Driver: " + carrera.getConductor().getNombre());
 		System.out.println("Stars: " + carrera.getConductor().getValoracion());
+
+
 	}
 }
