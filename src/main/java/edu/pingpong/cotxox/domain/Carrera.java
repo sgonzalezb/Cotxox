@@ -71,7 +71,8 @@ public class Carrera {
 		}
 
 		public Double getCosteTotal() {
-			return costeTotal;
+			return Tarifa.getCosteDistancia(distancia) + Tarifa.getCosteTiempo(tiempoEsperado);
+
 		}
 
 		public void setCosteTotal(Double costeTotal) {
