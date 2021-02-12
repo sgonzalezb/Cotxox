@@ -103,6 +103,10 @@ venv.bak/
 # mypy
 .mypy_cache/
 
+#vscode
+.vscode
+.settings
+
 #mvn 
 .classpath
 .project
